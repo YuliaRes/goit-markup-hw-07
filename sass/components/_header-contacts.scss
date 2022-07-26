@@ -1,0 +1,53 @@
+.header-item__contacts {
+    display: flex;
+    margin-left: auto;
+    
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+}     
+.header-item__link-contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     
+    color: var(--primary-text-color);
+    text-decoration: none;
+
+    transition: color var(--transition-duration) var(--timing-function);
+
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+     }
+}
+.header-item__contacts .header-item__link-contact {
+    padding: 32px 0;
+}
+.header-item__icon-mail {
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+    fill: var(--primary-text-color);   
+
+    transition: fill var(--transition-duration) var(--timing-function);
+}
+
+.header-item__icon-smartfon {
+    width: 10px;
+    height: 16px;
+    margin-right: 10px;
+    fill: var(--primary-text-color);
+
+    transition: fill var(--transition-duration) var(--timing-function);
+}
+.header-item__link-contact:hover .header-item__icon-mail,
+.header-item__link-contact:focus .header-item__icon-mail,
+.header-item__link-contact:hover .header-item__icon-smartfon,
+.header-item__link-contact:focus .header-item__icon-smartfon {
+    fill: var(--accent-color);
+}
+.header-item__contacts .header-item__link-contact + .header-item__link-contact {
+    margin-left: 50px;
+}

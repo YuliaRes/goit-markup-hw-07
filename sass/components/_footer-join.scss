@@ -1,0 +1,69 @@
+.join__title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--primary-white-color);
+
+    margin-bottom: 20px;
+}
+.join__form {
+    display: flex;
+}
+.join__to-mail label {
+    display: none;
+}
+.join__to-mail input {
+    width: 358px;
+    margin-right: 12px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    color: var(--accent-white-color);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color:transparent;
+
+    &::placeholder {
+     font-size: 16px;
+     line-height: 1.25;
+     color: var(--accent-white-color);
+     }
+}
+
+.join__to-tg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 200px;
+    padding: 0;
+
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    font-size: 16px;
+    line-height: 1.88;
+    color: var(--primary-white-color);
+    
+    background: var(--accent-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border: 0;
+    border-radius: 4px;
+    
+    cursor: pointer;
+    transition: background-color var(--transition-duration) var(--timing-function);
+}
+.icon__tg {
+    margin-left: 10px;
+    width: 24px;
+    height: 24px;
+
+    &:hover ,
+    &:focus {
+     background-color: var(--button-color);
+     }
+}
+

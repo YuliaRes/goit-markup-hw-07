@@ -1,0 +1,56 @@
+.headline__slogan {
+    margin-bottom: 30px;
+    width: 696px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--primary-white-color);
+} 
+.headline {
+    max-width: 1600px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--footer-color);
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/hero-img.jpg);
+   
+    background-position: center;
+
+    padding-top: 200px;
+    padding-bottom: 200px;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: center;
+}
+.headline__hero-title {
+    font-family: inherit;
+    padding: 10px 32px;
+    border-radius: 4px;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+
+    color: var(--primary-white-color);
+    background-color: var(--accent-color);
+    cursor: pointer;
+    border: transparent;
+    
+    transition: background-color var(--transition-duration) var(--timing-function);
+
+    &:hover,
+    &:focus {
+      background-color: var(--button-color);
+     }
+}
